@@ -1,0 +1,1350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF ;
+    --color2: #181818 ;
+}
+
+nav{
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    background-color: white;
+}
+.btn {
+    background-color: black;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 96px;
+}
+
+.sign div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0px;
+    background-color: black;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sign div button {
+    padding: 0px;
+}
+
+.btn1 {
+     /* background-color: black; */
+    align-items: center;
+    color: #404040;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.btn1:hover {
+    background-color: rgb(190, 179, 179);
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #222;
+    opacity: 0.8;
+
+}
+
+.btn:hover {
+    background-color: #222;
+}
+
+.btn2 img{
+    width: 70px;
+    height: 18px;
+    background: black;
+    margin-left: -3px;
+}
+.nav-bar {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    background-color:#fff;
+    padding: 15px 0px;
+    
+}
+
+.logo img {width: 65px;
+    height: 65px;
+text-align: start;
+margin-left: 60px;
+}
+.menu {display: flex;
+    
+/* margin-top: 20px; */
+}
+.menu li {padding-left: 0px;
+}
+.menu li a {
+    padding: 0px 5px;
+    margin-right: 30px;
+
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    
+}
+.open-menu {
+    top: 50%;
+    left: 20px;
+    color: black;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    color: black;
+    left: 20px;
+}
+#check {display: none;}
+@media(max-width: 760px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        z-index: 100;
+        background-color:#fff;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn2 img{
+    width: 50px;
+    height: 18px;
+    background: black;
+    margin-left: -3px;
+}
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {top: 0;}
+
+   
+    
+}
+ .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 500px;
+  background: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-text {
+  width: 100%;
+  position: absolute;
+  left: 8%;
+  color: white;
+  bottom: 02%;
+  align-self: self-start;
+  padding: 1rem;
+  min-width: 300px;
+  z-index: 1;
+}
+.hero-text h1{
+  font-size:2.5rem ;
+  font-weight:700 ;
+  margin:12px 0px ;
+}
+.hero-text p {
+  
+    font-size: 17px;
+    font-weight: 200;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-text span{
+    font-size:0.6879rem ;
+    /* font-weight: ; */
+}
+
+.b {
+    background-color: rgb(41, 189, 248);
+    color: white;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    /* align-items: center; */
+}
+.b:hover{
+    background-color: #249dc2;
+}
+
+.btns {
+    padding: 15px;
+    position: relative;
+    right: 25px;
+    bottom: 5px;
+
+}
+.b img{
+  height:12px;
+  width:15px;
+}
+
+
+.str {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card {
+    width: 18%;
+    line-height: 16px;
+    /* height: 200px; */
+    /* flex-wrap: wrap; */
+}
+
+.card img{
+    height: 130.5px;
+    width: 100%;
+}
+.card p{
+    color: #838383;
+    /* width:18%; */
+    font-size:18px ;
+    font-weight: 150;
+    margin:2px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+   
+}
+.card .cardpart{
+    color: #838383;
+    font-size: 13px;
+    margin-top:10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+.card  h4{
+    color: #404040;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.card1 {
+    width: 18%;
+    line-height: 16px;
+    /* height: 200px; */
+}
+
+.card1 img{
+    height: 130.5px;
+    width: 100%;
+}
+.card1 p{
+    color: #838383;
+    /* width:18%; */
+   
+    font-size:18px ;
+    font-weight: 150;
+    margin:2px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+   
+}
+.card1 .cardpart{
+    color: #838383;
+    font-size: 13px;
+    margin-top:10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+.card1  h4{
+    color: #404040;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    margin: 2px;
+    gap: 40px;
+    /* width: 100%; */
+}
+
+.line {
+    line-height: 16px;
+}
+
+.line:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.b img {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.box{background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxheading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: #404040;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: 700; 
+font-size: 15px;
+}
+.box .boxheading a{
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: #2bb0da;
+    text-decoration: none;
+}
+
+.episodes{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    justify-content: space-between;
+}
+.line-hr{
+    width: 80%;
+    height: 0.5px ;
+    margin:8px 0px;
+    background-color: black;
+
+}
+.ep{
+    border-left: 1px solid black;
+    margin-top: 5px;
+    padding:0px  7px;
+
+}
+.ep p {
+    color: #404040;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: 700; 
+font-size: 15px;
+letter-spacing: 1px;
+    margin-bottom: 6px;
+    padding: 0px;
+}
+.ep span{
+    color: #404040;
+    font-size: 14px;
+}
+.boxcontainer{
+    background: linear-gradient(to top, #000000, #2e2f3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 50px;
+    height:100%;
+    width: 100%;
+}
+
+.boxcontainer .photo-contain{
+    display: flex;
+    justify-content: center;
+    margin-left: 67px;
+    margin-top: 35px;
+    height: 366px;
+}
+.boxcontainer .photo-contain .box1{
+    margin: 20px;
+height: 300px;
+}
+.boxcontainer .photo-contain .box1 img{
+   
+height: 100%;
+}
+.text-contain{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 50px;
+    text-align: center;
+}
+.text-contain img{
+    height:70px;
+    width:250px;
+    margin-bottom:30px ;   
+}
+.text-contain h1{
+  font-family: Street2, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  font-size: 35px; 
+  margin-bottom:30px;
+}
+.text-contain button{
+    padding: 13px 35px;
+}
+.onecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.onecontainer img{
+margin-top: 35px;
+}
+
+.bg2 {
+    background-image: url("./quilt-march2025-darker.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.bg2 img{
+height: 58px;
+width: 200px;
+margin-top:0px ;
+}
+.bg2 p{
+    color: white;
+    margin-top: 22px;
+}
+.bg2 button{
+    padding: 6px;
+    width: 60%;
+    margin-top: 27px;
+    outline: none;
+    border: none;
+    
+}
+.bg2 button:hover{
+color: #f1f1f1;
+cursor: pointer;
+background-color: #404040;
+}
+.footer{
+    background-color: #404040;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+list-style:none ;
+   
+}
+.footer .foot-img{
+    margin: 20px 0px;
+    margin-top: 30px;
+}
+.footer img{
+    display:flex;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+}
+.foot1 a:hover{
+    text-decoration: underline;
+   color: #f1f1f1;
+}
+.foot2 a:hover{
+    text-decoration: underline;
+   color: #f1f1f1;
+}
+ .foot1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    margin: 20px 0px;
+    width: 100%;
+ }
+ .foot1 a{
+    color: white;
+    padding:0px 10px;
+    margin: 0px 6px;
+    font-style: normal;
+    font: size 14px; ;
+    /* margin: 6px; */
+ }
+ .foot2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    margin: 20px 0px;
+    width: 100%;   
+ }
+ .foot2 a{
+    color: white;
+    padding: 6px 12px;
+    font: size 11px;
+    font-weight: 100;
+
+ }
+ .foot3 {
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+ @media(max-width:760px){
+   
+    nav{
+position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    width: 100%;
+}
+nav div{
+    margin: 0px 50px;
+}
+.btn {
+    background-color: black;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+}
+.sign button{
+    font-size: 12px;
+    padding: 10px 10px;
+}
+.sign div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0px;
+    background-color: black;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sign div button {
+    padding: 0px;
+}
+
+.btn1 {
+    background-color: transparent;
+    color: black;
+}
+
+.btn1:hover {
+    background-color: rgb(190, 179, 179);
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #222;
+    opacity: 0.8;
+
+}
+
+.btn:hover {
+    background-color: #222;
+}
+
+.btn2 img{
+    width: 45px;
+    height: 18px;
+    background: black;
+    margin-left: -3px;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color:#fff;
+    padding: 0px 0px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+text-align:end;
+margin-left: 0px;
+}
+
+.boxcontainer .photo-contain{
+     display: flex;
+    justify-content: center; 
+    /* flex-direction:column ;
+    align-items: center; */
+    margin-left: 0px;
+    margin-top: 45px;
+    height: 325px;
+    width: 100%;
+}
+    
+.boxcontainer{
+    background: linear-gradient(to top, #000000, #2e2f3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 50px;
+    height:100%;
+    width: 100%;
+}
+.text-contain img {
+   height: 65px;
+   width: 220px;
+   margin-bottom: 20px;
+   margin-top: 60px;
+}
+.text-contain{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 0px;
+    text-align: center;
+}
+.text-contain h1 {font-family: Street2, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 50;
+    font-style: normal;
+    color: white;
+    font-size:33px;
+    margin-bottom: 30px;
+ }
+ .boxcontainer .photo-contain .box1{
+    margin: 16px;
+height: 250px;
+}
+.boxcontainer .photo-contain .box1 img{
+    border-radius: 05px;
+   
+height: 100%;
+}
+.text-contain button{
+    padding: 16px 19px;
+    font-size:12px;
+    font-weight: 600;
+}
+.box{
+    background-color: #f1f1f1;
+    display: flex;
+     justify-content: center; 
+    flex-wrap:wrap;
+    height: 250px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+ }
+ .boxheading{
+    color: #404040;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: 700; /* Bold */
+font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+
+}
+.episodes{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+}
+.line-hr{
+    width: 80%;
+    height: 0.5px ;
+    margin:8px 0px;
+    background-color: #404040;
+
+}
+.line-hr1{
+    width: 80%;
+    height: 0.5px ;
+    margin:8px 0px;
+    background-color: #404040;
+
+}
+.ep{
+    
+    border-left: 1px solid black;
+    margin-top: 15px;
+    padding:0px  7px;
+
+}
+.ep p {
+    color: #404040;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: 700; 
+font-size: 13px;
+letter-spacing: 1px;
+    margin-bottom: 6px;
+    padding: 0px;
+}
+.ep span{
+    color: #404040;
+    font-size: 12px;
+}
+.box .boxheading div a{
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-decoration: none;
+}
+.boxheading div a p{
+    color: #2bb0da;
+}
+.card1 {
+    width: 63%;
+    line-height: 16px;
+}
+
+.card1 img{
+    height: 250px;
+    width: 100%;
+}
+.card1 p{
+    color: #838383;  
+    font-size:17px ;
+    font-weight: 100;
+    margin:2px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+   
+}
+.card1 .cardpart{
+    color: #838383;
+    font-size: 13px;
+    margin-top:10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+.card1  h4{
+    color: #404040;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.card1 .item{
+    font-size: 14px;
+}
+.card {
+   
+    flex-wrap: wrap;
+    width: 40%;
+    line-height: 16px;
+}
+
+.card img{
+    height: 130.5px;
+    width: 100%;
+}
+.card p{
+    color: #838383;
+    /* width:18%; */
+   
+    font-size:18px ;
+    font-weight: 150;
+    margin:2px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+   
+}
+.card .cardpart{
+    color: #838383;
+    font-size: 13px;
+    margin-top:10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+.card  h4{
+    color: #404040;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.bg {
+    background-image: url("./images/the-last-of-us-s2-version-a-ka-2000x700.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 255px;
+    position: relative;
+    flex-direction: column;}
+
+    .bg2 button{
+    padding: 6px;
+    width: 60%;
+    margin-top: 27px;
+    outline: none;
+    border: none;
+    }   
+}
+
+ 
+@media (max-width: 768px) {
+ 
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    /* margin-top: 50px; */
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    background-color:#fff; /* optional */
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    /* padding: 10px 0px; */
+  }
+  .btns {
+    flex-direction: column;
+    padding: 15px 0px;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    /* height: 50px; */
+
+}
+.b{
+  width: 100%;
+  margin: 10px 0px;
+}
+.hero-text span,h1,p{
+  color: #404040;
+}
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 96px;
+    width: 100%;
+    background-color: none;
+}
+.sign div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0px;
+    background-color: black;
+    height: 40px;
+    
+    cursor: pointer;
+}
+.sign div button{
+    padding: 0px;
+    width: 100%;
+
+}
+
+
+.btn {
+    background-color: black;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    width:100px;
+}
+.footer{
+    
+    background-color: #404040;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+   width: 100%;
+   /* background-color: #249dc2; */
+}
+.footer .foot-img{
+    margin: 10px 0px;
+    margin-top: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.foot1 a:hover{
+    text-decoration: underline;
+   color: #f1f1f1;
+}
+.foot2 a:hover{
+    text-decoration: underline;
+   color: #f1f1f1;
+}
+ .foot1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    margin: 10px 0px;
+    width: 100%;
+ }
+ .foot1 a{
+    color: white;
+    padding:0px 10px;
+    margin: 0px 3px;
+    font-style: normal;
+    font-size: 12px; ;
+    /* margin: 6px; */
+ }
+ .foot2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    margin: 10px 0px;
+    width: 100%;   
+ }
+ .foot2 a{
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 100;
+
+ }
+ .foot3 .align{
+    
+    color:#fff;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    line-height: 21px;
+    font-size: 12px;
+ }
+}
+ @media(max-width:460px){
+  
+    nav{
+    /* position: sticky; */
+    display: flex;
+    justify-content:center;
+    height: 50px;
+    width: 100%;
+}
+nav div{
+    margin: 0px 0px;
+}
+.btn {
+    background-color: black;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 0px 2px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    padding: 0px 3px;
+}
+.sign button{
+    font-size: 10px;
+    padding: 5px 5px;
+    width: 69px;
+}
+.sign div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0px;
+    background-color: black;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sign div button {
+    padding: 0px;
+    width: 79px;
+}
+
+.btn1{
+    background-color: transparent;
+    color: black;
+    font-size:10px;
+}
+
+.btn1:hover {
+    background-color: rgb(190, 179, 179);
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #222;
+    opacity: 0.8;
+
+}
+
+.btn:hover {
+    background-color: #222;
+}
+
+.btn2 img{
+    width: 45px;
+    height: 18px;
+    background: black;
+    margin-left: -3px;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color:#fff;
+    padding: 0px 0px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+text-align:end;
+margin-left: 50px;
+}
+
+
+.boxcontainer .photo-contain{
+     display: flex;
+    justify-content: center; 
+    /* flex-direction:column ;
+    align-items: center; */
+    margin-left: 0px;
+    margin-top: 35px;
+    height:100%;
+    width: 100%;
+    /* background-color: red; */
+}
+    
+.boxcontainer{
+    background: linear-gradient(to top, #000000, #2e2f3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 50px;
+    height:100%;
+    width: 100%;
+    /* background-color: red; */
+}
+.text-contain img {
+   height: 65px;
+   width: 220px;
+   margin-bottom: 20px;
+   margin-top: 60px;
+}
+.text-contain{
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 0px;
+    text-align: center;
+}
+.text-contain h1 {font-family: Street2, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight:500;
+    font-style: normal;
+    color: white;
+    font-size:23px;
+    margin-bottom: 30px;
+ }
+ .boxcontainer .photo-contain .box1{
+    margin: 0px 10px;
+    height: 250px;
+}
+.boxcontainer .photo-contain .box1 img{
+    border-radius: 05px;
+    height: 60%;
+}
+.box .boxheading a{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: #2bb0da;
+    text-decoration: none;
+}
+.text-contain button{
+    padding: 16px 19px;
+    font-size:12px;
+    font-weight: 600;
+}
+
+.footer{
+    
+    background-color: #404040;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+   width: 100%;
+   /* background-color: #249dc2; */
+}
+.footer .foot-img{
+    margin: 10px 0px;
+    margin-top: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.foot1 a:hover{
+    text-decoration: underline;
+   color: #f1f1f1;
+}
+.foot2 a:hover{
+    text-decoration: underline;
+   color: #f1f1f1;
+}
+ .foot1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding-top: 0px;
+    margin: 10px 0px;
+    width: 100%;
+ }
+ .foot1 a{
+    line-height: 40px;
+    color: white;
+    padding:0px 11px;
+    margin: 0px 3px;
+    font-style: normal;
+    font-size: 15px; 
+    /* margin: 6px; */
+ }
+ .foot2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    margin: 10px 0px;
+    width: 100%;   
+ }
+ .foot2 a{
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 50;
+line-height: 30px;
+ }
+ .foot3 .align{
+    
+    color:#fff;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    line-height: 21px;
+    font-size: 13px;
+ }
+ 
+
+}
+@media(max-width:460px){
+    .card {
+   
+    flex-wrap: wrap;
+    width: 100%;
+    line-height: 16px;
+}
+
+.card img{
+    height: 130.5px;
+    /* width: 50%; */
+    object-fit: cover;
+}
+.card p{
+    color: #838383;
+    /* width:%; */
+   
+    font-size:16px ;
+    font-weight: 150;
+    margin:2px 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+   
+}
+.card .cardpart{
+    color: #838383;
+    font-size: 13px;
+    margin-top:10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+.card  h4{
+    color: #404040;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.bg {
+    background-image: url("./images/the-last-of-us-s2-version-a-ka-2000x700.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 255px;
+    position: relative;
+    flex-direction: column;
+}
+.card1 {
+    width: 80%;
+    line-height: 16px;
+    height: 100%;
+}
+
+.card1 img{
+    height: 130.5px;
+    width: 100%;
+}
+.bg2 button{
+    padding: 6px;
+    width: 60%;
+    margin-top: 27px;
+    outline: none;
+    border: none;
+    
+}
+}
