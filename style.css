@@ -14,7 +14,6 @@ body {
     width: 100%;
     height:100%;
     margin: 0px;
-    padding: 0px;
 }
 nav{
   position: fixed;
@@ -43,10 +42,12 @@ nav{
     outline: none;
 }
 .sign {
+    height: 50px;
+    position: relative;
+    left: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 96px;
 }
 
 .sign div {
@@ -107,17 +108,19 @@ nav{
     list-style: none;
     position: fixed;
     top: 0;
+    height: 50px;
     background-color:#fff;
     padding: 0px 0px;
     
 }
 
-.logo img {width: 65px;
-    height: 65px;
+.logo img {width:50px;
+    height: 50px;
 text-align: start;
 margin-left: 60px;
 }
 .menu {display: flex;
+    
 /* margin-top: 20px; */
 }
 .menu li {padding-left: 0px;
@@ -125,6 +128,7 @@ margin-left: 60px;
 .menu li a {
     padding: 0px 5px;
     margin-right: 30px;
+
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -133,7 +137,7 @@ margin-left: 60px;
     position: relative;
     text-transform: uppercase;
 }
-/* .menu li a::after {
+.menu li a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -142,8 +146,8 @@ margin-left: 60px;
     height: 1px;
     background-color: var(--color1);
     transition: 0.15s ease-in-out;
-} */
-/* .menu li a:hover:after {width: 100%;} */
+}
+.menu li a:hover:after {width: 100%;}
 .open-menu , .close-menu {
     position: absolute;
     color: var(--color1);
@@ -166,7 +170,17 @@ margin-left: 60px;
 #check {display: none;}
 @media(max-width: 760px){
     .menu {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        z-index: 100;
+        background-color:#fff;
+        transition: all 0.2s ease-in-out;
     }
     .btn2 img{
     width: 50px;
@@ -176,7 +190,7 @@ margin-left: 60px;
 }
     .menu li {margin-top: 40px;}
     .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display:block;}
+    .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {top: 0;}
 
    
@@ -189,7 +203,7 @@ margin-left: 60px;
   position: relative;
   width: 100%;
   height: 500px;
-  margin-top:0px;
+  margin-top: 57px;
   overflow: hidden;
 }
 
@@ -608,7 +622,7 @@ nav div{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0px;
+    left: 10%;
 }
 .sign button{
     font-size: 12px;
@@ -621,7 +635,7 @@ nav div{
     padding: 0px 10px;
     margin: 0px;
     background-color: black;
-    height: 40px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -1070,6 +1084,7 @@ nav div{
     justify-content: center;
     margin-right: 0px;
     padding: 0px 3px;
+    left: 3%;
 }
 .sign button{
     font-size: 10px;
